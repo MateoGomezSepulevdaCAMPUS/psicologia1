@@ -17,14 +17,15 @@ class Psychology extends Conectar{
             $conectar=parent::Conexion();
             parent::set_name();
             $stm= $conectar->prepare("SELECT * FROM  psicologa WHERE id_psicologa= ?");
-            $stm->bindValue(1,$id_psicologa);
+            $stm->bindValue(1, $id); // Cambio realizado aquí
             $stm->execute();
             return $stm->fetchAll(PDO::FETCH_ASSOC);
-
-        }catch (Exception $e) {
-            return  $e ->getMessage();
+    
+        } catch (Exception $e) {
+            return $e->getMessage();
         }
     }
+    
     public function insert_psychology($id_psicologa,$nombre,$apellido,$edad,$especialidad){
         $conectar=parent::conexion();
         parent::set_name();

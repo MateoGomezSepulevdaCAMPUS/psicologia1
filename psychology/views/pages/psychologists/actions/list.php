@@ -1,5 +1,5 @@
 <?php
-$url="http://localhost/ArTeM02-48/psicologia/apirest/controllers/psychology.php?op=GetAll";
+$url="http://localhost/psicologa/psicologia1/apirest/controllers/psychology.php?op=GetAll";
 $curl=curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER,1);
@@ -27,26 +27,26 @@ $output = json_decode(curl_exec($curl));
         </button>
       </div>
       <div class="modal-body">
-      <form class="col d-flex flex-wrap" id="notas" method="PATCH">
+      <form class="col d-flex flex-wrap" id="notas" method="POST">
               <div class="m-2 col-8">
                 <label for="exampleInputPassword1" class="form-label">Nombre Psicologa</label>
-                <input type="text" class="form-control" id="nombre" step="0.1" max="5.0" min="1.0" name="nombre">
+                <input type="text" class="form-control" id="nombre"  name="nombre">
               </div>
               <div class="m-2 col-8">
                 <label for="exampleInputPassword1" class="form-label">APellido</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" step="0.1" max="5.0" min="1.0">
+                <input type="text" class="form-control" id="apellido" name="apellido">
               </div>
               <div class="m-2 col-3">
                 <label for="exampleInputPassword1" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="edad" name="edad" step="0.1" max="5.0" min="1.0">
+                <input type="number" class="form-control" id="edad" name="edad" >
               </div>
               <div class="m-2 col-8">
                 <label for="exampleInputPassword1" class="form-label">Especialidad</label>
-                <input type="text" class="form-control" id="especialidad" name="especialidad" step="0.1" max="5.0" min="1.0">
+                <input type="text" class="form-control" id="especialidad" name="especialidad">
               </div>
 
               <div class=" col-12 m-2">
-                <button type="submit" class="btn btn-primary" name="guardar">Submit</button> 
+                <button type="submit" class="btn btn-primary" name="guardar" id="guardar">Submit</button> 
               </div>
              
 
@@ -72,7 +72,9 @@ $output = json_decode(curl_exec($curl));
                   </tr>
                   </thead>
                   <tbody>
-                    <?php foreach($output as $out){?>
+                    <?php 
+                    require "new.php";
+                    foreach($output as $out){?>
                   <tr>
                     <td><?php echo $out->id_psicologa;?></td>
                     <td><?php echo $out->nombre;?>
@@ -82,9 +84,6 @@ $output = json_decode(curl_exec($curl));
                     <td><?php echo $out->especialidad;?></td>
                   </tr>
                   <?php }  ?>
-                  <?php
-                  
-                  ?>
                   </tfoot>
                 </table>
               </div>
