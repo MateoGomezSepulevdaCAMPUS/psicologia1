@@ -24,7 +24,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-                    <a href="/psicologa/psicologia1/psychology/" class="nav-link <?php if($routesArray[4]== ""): ?> active <?php endif ?>">
+                    <a href="/ArTeM02-049/psicologia1/psychology/" class="nav-link <?php if($routesArray[4]== ""): ?> active <?php endif ?>">
                     <i class="nav-icon far fa-home"></i>
                     <p>
                         Home
@@ -33,7 +33,7 @@
                 </li>
                
                <li class="nav-item">
-                    <a href="/psicologa/psicologia1/psychology/users" class="nav-link <?php if($routesArray[4]== "users"): ?> active <?php endif ?>">
+                    <a href="/ArTeM02-049/psicologia1/psychology/users" class="nav-link <?php if($routesArray[4]== "users"): ?> active <?php endif ?>">
                     <i class="nav-icon far fa-user"></i>
                     <p>
                         Users
@@ -41,7 +41,7 @@
                     </a>
                 </li>
           <li class="nav-item">
-            <a href="/psicologa/psicologia1/psychology/clincHistory" class="nav-link <?php if($routesArray[4]== "clincHistory"): ?> active <?php endif ?>">
+            <a href="/ArTeM02-049/psicologia1/psychology/clincHistory" class="nav-link <?php if($routesArray[4]== "clincHistory"): ?> active <?php endif ?>">
               <i class="nav-icon far fa-user"></i>
               <p>
                 Clinic History
@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/psicologa/psicologia1/psychology/interviews" class="nav-link <?php if($routesArray[4]== "interviews"): ?> active <?php endif ?>">
+            <a href="/ArTeM02-049/psicologia1/psychology/interviews" class="nav-link <?php if($routesArray[4]== "interviews"): ?> active <?php endif ?>">
               <i class="nav-icon far fa-user"></i>
               <p>
                 Interviews
@@ -57,7 +57,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/psicologa/psicologia1/psychology/psychologists" class="nav-link <?php if($routesArray[4]== "psychologists"): ?> active <?php endif ?>">
+            <a href="/ArTeM02-049/psicologia1/psychology/psychologists" class="nav-link <?php if($routesArray[4]== "psychologists"): ?> active <?php endif ?>">
               <i class="nav-icon far fa-user"></i>
               <p>
               Psychologists
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/psicologa/psicologia1/psychology/treatment" class="nav-link <?php if($routesArray[4]== "treatment"): ?> active <?php endif ?>">
+            <a href="/ArTeM02-049/psicologia1/psychology/treatment" class="nav-link <?php if($routesArray[4]== "treatment"): ?> active <?php endif ?>">
               <i class="nav-icon far fa-user"></i>
               <p>
               Treatment
