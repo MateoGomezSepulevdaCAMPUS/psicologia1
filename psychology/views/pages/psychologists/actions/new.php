@@ -8,7 +8,7 @@ if (isset($_POST['guardar'])) {
 
     $url = 'http://localhost/ArTeM02-049/psicologia1/apirest/controllers/psychology.php?op=insert';
 
-    // Datos que se enviarán en la solicitud POST
+    // Datos que se envian en la solicitud POST
     $data = array(
         'nombre' => $nombre = $_POST['nombre'],
         'apellido' => $apellido = $_POST['apellido'],
